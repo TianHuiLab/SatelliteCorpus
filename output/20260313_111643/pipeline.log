@@ -1,0 +1,20 @@
+[2026-03-13 11:16:43] [Pipeline] [INFO] ============================================================
+[2026-03-13 11:16:43] [Pipeline] [INFO] Pipeline v3.1 启动 | 模式=cpt | 时间=20260313_111643
+[2026-03-13 11:16:43] [Pipeline] [INFO] 知识密度过滤: 启用
+[2026-03-13 11:16:43] [Pipeline] [INFO] 并发线程数: 1
+[2026-03-13 11:16:43] [Pipeline] [INFO] ============================================================
+[2026-03-13 11:16:43] [Pipeline] [INFO] [Step 1/7] 加载Markdown文档...
+[2026-03-13 11:16:43] [Pipeline] [INFO] [Step 2/7] 执行语义分块...
+[2026-03-13 11:16:44] [Pipeline] [INFO] 分块完成: {'total_chunks': 677, 'total_chars': 306180, 'avg_chars': 452.2599704579025, 'min_chars': 17, 'max_chars': 1363, 'type_distribution': {'description': 326, 'case': 34, 'definition': 205, 'process': 51, 'data': 54, 'reference': 7}, 'chapters': 10, 'reference_chunks': 4, 'formula_chunks': 72, 'table_chunks': 83}
+[2026-03-13 11:16:44] [Pipeline] [INFO] 分块结果已保存: output/20260313_111643\chunks.jsonl
+[2026-03-13 11:16:44] [Pipeline] [INFO] [Step 3/7] 生成CPT语料...
+[2026-03-13 11:16:44] [Pipeline] [INFO] [Step 4/7] 跳过知识密度过滤（mode=cpt）
+[2026-03-13 11:16:44] [Pipeline] [INFO] [Step 5/7] 跳过SFT生成（mode=cpt）
+[2026-03-13 11:16:44] [Pipeline] [INFO] [Step 6/7] 生成质量报告...
+[2026-03-13 11:16:44] [Pipeline] [INFO] [Step 7/7] 保存运行报告...
+[2026-03-13 11:16:44] [Pipeline] [INFO] 运行报告已保存: output/20260313_111643\pipeline_report.json
+[2026-03-13 11:16:44] [Pipeline] [INFO] Markdown报告已保存: output/20260313_111643\pipeline_report.md
+[2026-03-13 11:16:44] [Pipeline] [INFO] ============================================================
+[2026-03-13 11:16:44] [Pipeline] [INFO] Pipeline v3.1 完成 | 耗时=1.1秒
+[2026-03-13 11:16:44] [Pipeline] [INFO] 输出目录: output/20260313_111643
+[2026-03-13 11:16:44] [Pipeline] [INFO] ============================================================

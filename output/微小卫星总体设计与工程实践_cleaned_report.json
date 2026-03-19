@@ -1,0 +1,15 @@
+{
+  "original_file": "F:/SatelliteCorpus/md_books/微小卫星总体设计与工程实践.md",
+  "cleaned_file": "F:/SatelliteCorpus/output/微小卫星总体设计与工程实践.cleaned.md",
+  "original_char_count": 353433,
+  "cleaned_char_count": 333022,
+  "figures_removed": 10,
+  "captions_converted": 173,
+  "orphan_captions_processed": 69,
+  "tables_linearized": 55,
+  "intext_refs_replaced": 5,
+  "sentences_merged": 0,
+  "blank_lines_compressed": 182,
+  "page_artifacts_removed": 0,
+  "warnings": []
+}

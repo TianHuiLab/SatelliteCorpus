@@ -1,0 +1,54 @@
+{
+  "timestamp": "20260313_111643",
+  "pipeline_version": "3.1",
+  "config": {
+    "mode": "cpt",
+    "cold_start": 0,
+    "domain": "aerospace",
+    "model": "qwen3-max",
+    "max_workers": 1,
+    "filter_enabled": true,
+    "llm_filter_enabled": true
+  },
+  "documents": [
+    {
+      "filename": "微小卫星总体设计与工程实践.md",
+      "book_name": "微小卫星总体设计与工程实践",
+      "total_chars": 317816,
+      "total_sections": 665,
+      "chunks_count": 677
+    }
+  ],
+  "chunking": {
+    "total_chunks": 677,
+    "total_chars": 306180,
+    "avg_chars": 452.2599704579025,
+    "min_chars": 17,
+    "max_chars": 1363,
+    "type_distribution": {
+      "description": 326,
+      "case": 34,
+      "definition": 205,
+      "process": 51,
+      "data": 54,
+      "reference": 7
+    },
+    "chapters": 10,
+    "reference_chunks": 4,
+    "formula_chunks": 72,
+    "table_chunks": 83
+  },
+  "cpt": {
+    "total_samples": 677,
+    "total_chars": 351251,
+    "avg_chars": 518.834564254062,
+    "min_chars": 60,
+    "max_chars": 1429,
+    "chapters": 10,
+    "domain": "aerospace"
+  },
+  "filter": {},
+  "sft": {},
+  "quality": {},
+  "elapsed_seconds": 1.1
+}

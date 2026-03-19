@@ -1,0 +1,28 @@
+[2026-03-12 22:53:18] [Pipeline] [INFO] ============================================================
+[2026-03-12 22:53:18] [Pipeline] [INFO] Pipeline v3.1 启动 | 模式=full | 时间=20260312_225318
+[2026-03-12 22:53:18] [Pipeline] [INFO] 知识密度过滤: 启用
+[2026-03-12 22:53:18] [Pipeline] [INFO] 并发线程数: 3
+[2026-03-12 22:53:18] [Pipeline] [INFO] ============================================================
+[2026-03-12 22:53:18] [Pipeline] [INFO] [Step 1/7] 加载Markdown文档...
+[2026-03-12 22:53:19] [Pipeline] [INFO] [Step 2/7] 执行语义分块...
+[2026-03-12 22:53:19] [Pipeline] [INFO] 冷启动模式: 仅处理前 30 个chunk
+[2026-03-12 22:53:19] [Pipeline] [INFO] 分块完成: {'total_chunks': 30, 'total_chars': 17455, 'avg_chars': 581.8333333333334, 'min_chars': 17, 'max_chars': 1203, 'type_distribution': {'description': 11, 'case': 1, 'definition': 10, 'process': 2, 'data': 6}, 'chapters': 1, 'reference_chunks': 0, 'formula_chunks': 0, 'table_chunks': 5}
+[2026-03-12 22:53:19] [Pipeline] [INFO] 分块结果已保存: output/20260312_225318\chunks.jsonl
+[2026-03-12 22:53:19] [Pipeline] [INFO] [Step 3/7] 生成CPT语料...
+[2026-03-12 22:53:19] [Pipeline] [INFO] [Step 4/7] 执行知识密度预过滤...
+[2026-03-12 22:53:19] [Pipeline] [INFO] 预过滤完成: 通过=20, 过滤=10, 过滤率=33.3%
+[2026-03-12 22:53:19] [Pipeline] [INFO] 过滤详情已保存: output/20260312_225318\filter_details.jsonl
+[2026-03-12 22:53:19] [Pipeline] [INFO] 被过滤chunk已保存: output/20260312_225318\filtered_chunks.jsonl
+[2026-03-12 22:53:19] [Pipeline] [INFO] [Step 5/7] 生成SFT语料...
+[2026-03-12 22:54:11] [Pipeline] [INFO] SFT进度: 5/20 (25.0%)
+[2026-03-12 22:54:45] [Pipeline] [INFO] SFT进度: 10/20 (50.0%)
+[2026-03-12 22:55:42] [Pipeline] [INFO] SFT进度: 15/20 (75.0%)
+[2026-03-12 22:57:06] [Pipeline] [INFO] SFT进度: 20/20 (100.0%)
+[2026-03-12 22:57:06] [Pipeline] [INFO] [Step 6/7] 生成质量报告...
+[2026-03-12 22:57:06] [Pipeline] [INFO] [Step 7/7] 保存运行报告...
+[2026-03-12 22:57:06] [Pipeline] [INFO] 运行报告已保存: output/20260312_225318\pipeline_report.json
+[2026-03-12 22:57:06] [Pipeline] [INFO] Markdown报告已保存: output/20260312_225318\pipeline_report.md
+[2026-03-12 22:57:06] [Pipeline] [INFO] ============================================================
+[2026-03-12 22:57:06] [Pipeline] [INFO] Pipeline v3.1 完成 | 耗时=227.8秒
+[2026-03-12 22:57:06] [Pipeline] [INFO] 输出目录: output/20260312_225318
+[2026-03-12 22:57:06] [Pipeline] [INFO] ============================================================

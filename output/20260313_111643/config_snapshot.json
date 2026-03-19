@@ -1,0 +1,80 @@
+{
+  "chunker": {
+    "min_chunk_chars": 200,
+    "max_chunk_chars": 800,
+    "overlap_chars": 50,
+    "heading_levels": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "preserve_context_anchor": true
+  },
+  "cpt": {
+    "add_metadata_header": true,
+    "separator": "\n\n",
+    "output_format": "jsonl"
+  },
+  "filter": {
+    "enable": true,
+    "min_valid_chars": 30,
+    "high_value_threshold": 2,
+    "enable_llm_filter": true,
+    "filter_sections": [
+      "前言",
+      "序言",
+      "目录",
+      "致谢",
+      "作者介绍",
+      "出版说明",
+      "版权",
+      "参考文献",
+      "索引"
+    ]
+  },
+  "llm": {
+    "provider": "dashscope",
+    "model": "qwen3-max",
+    "api_key": "",
+    "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "temperature": 0.3,
+    "max_tokens": 4096,
+    "top_p": 0.9,
+    "timeout": 120,
+    "max_retries": 3,
+    "retry_delay": 2.0,
+    "batch_delay": 0.5,
+    "enable_thinking": false,
+    "max_workers": 1
+  },
+  "sft": {
+    "output_format": "sharegpt",
+    "confidence_threshold": 0.7,
+    "max_samples_per_chunk": 5,
+    "enable_negative_examples": true,
+    "domain_glossary_path": "",
+    "target_type_distribution": {
+      "fact_qa": 0.25,
+      "comprehension": 0.15,
+      "reasoning_qa": 0.25,
+      "summarization": 0.15,
+      "information_extraction": 0.15,
+      "calculation": 0.05
+    }
+  },
+  "quality": {
+    "enable_json_validation": true,
+    "enable_source_check": true,
+    "min_answer_length": 20,
+    "max_answer_length": 2000,
+    "similarity_threshold": 0.75,
+    "enable_dedup": true
+  },
+  "input_dir": "F:/SatelliteCorpus/md_books/微小卫星总体设计与工程实践.md",
+  "output_dir": "output/",
+  "log_level": "INFO",
+  "random_seed": 42,
+  "domain": "aerospace",
+  "book_name": ""
+}

@@ -1,0 +1,93 @@
+{
+  "timestamp": "20260313_111926",
+  "pipeline_version": "3.1",
+  "config": {
+    "mode": "sft",
+    "cold_start": 0,
+    "domain": "aerospace",
+    "model": "qwen3-max",
+    "max_workers": 3,
+    "filter_enabled": true,
+    "llm_filter_enabled": true
+  },
+  "documents": [
+    {
+      "filename": "微小卫星总体设计与工程实践.md",
+      "book_name": "微小卫星总体设计与工程实践",
+      "total_chars": 317816,
+      "total_sections": 665,
+      "chunks_count": 677
+    }
+  ],
+  "chunking": {
+    "total_chunks": 677,
+    "total_chars": 306180,
+    "avg_chars": 452.2599704579025,
+    "min_chars": 17,
+    "max_chars": 1363,
+    "type_distribution": {
+      "description": 326,
+      "case": 34,
+      "definition": 205,
+      "process": 51,
+      "data": 54,
+      "reference": 7
+    },
+    "chapters": 10,
+    "reference_chunks": 4,
+    "formula_chunks": 72,
+    "table_chunks": 83
+  },
+  "cpt": {},
+  "filter": {
+    "total_chunks": 677,
+    "passed_chunks": 659,
+    "rejected_chunks": 18,
+    "filter_rate": "2.7%"
+  },
+  "sft": {
+    "total_chunks_input": 659,
+    "chunks_filtered": 14,
+    "chunks_passed": 645,
+    "total_api_calls": 874,
+    "total_tokens_used": 1479173,
+    "successful_generations": 3081,
+    "failed_generations": 8,
+    "low_confidence_count": 8,
+    "self_contained_violations": 98,
+    "type_counts": {
+      "information_extraction": 468,
+      "fact_qa": 1375,
+      "summarization": 485,
+      "reasoning_qa": 61,
+      "comprehension": 636,
+      "calculation": 56
+    },
+    "filter_stats": {
+      "total_processed": 659,
+      "rule_filtered": 0,
+      "rule_passed": 430,
+      "llm_filtered": 14,
+      "llm_passed": 215,
+      "uncertain_count": 229,
+      "reference_filtered": 0,
+      "density_distribution": {
+        "high": 645,
+        "medium": 0,
+        "low": 14
+      },
+      "filter_rate": 2.12443095599393,
+      "rule_filter_rate": 0.0,
+      "reference_filter_count": 0
+    },
+    "model": "qwen3-max",
+    "domain": "aerospace",
+    "temperature": 0.3,
+    "confidence_threshold": 0.7,
+    "max_workers": 3,
+    "good_samples": 3081,
+    "low_confidence_samples": 0
+  },
+  "quality": {},
+  "elapsed_seconds": 5405.19
+}
